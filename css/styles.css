@@ -286,7 +286,18 @@ body ul {
     font-style: normal;
 }
 .link.current {
+    position: relative;
     color: var(--accent-color);
+}
+.link.current::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+    bottom: -33px;
+    background-color: var(--accent-color);
 }
 .link.contact {
     color: var(--secondary-text-color);
