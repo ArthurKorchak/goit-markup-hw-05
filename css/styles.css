@@ -494,7 +494,7 @@ body ul {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-
+    visibility: collapse;
 }
 .modal {
     position: absolute;
@@ -511,6 +511,9 @@ body ul {
 }
 .btn-modal {
     position: absolute;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 28px;
     height: 28px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -520,4 +523,9 @@ body ul {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.btn-modal:hover,
+.btn-modal:focus {
+    background-color: var(--accent-color);
+    fill: var(--background-color);
 }
