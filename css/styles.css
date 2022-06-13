@@ -24,6 +24,14 @@ html {
 .flex {
     display: flex;
 }
+.h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+}
 body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -115,14 +123,6 @@ body ul {
 .benefits p {
     margin: 0;
 }
-.benefits h3 {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin: 0px 0px 10px 0px;
-}
 .container.examples {
     flex-direction: column;
 }
@@ -135,6 +135,22 @@ body ul {
 .examples.flex {
     grid-gap: 30px;
     margin: 0;
+}
+.examples img {
+    display: block;
+}
+.examples div {
+    position: relative;
+}
+.examples h3 {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 27px 0px;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
 }
 .team {
     background-color: #F5F4FA;
@@ -209,6 +225,11 @@ body ul {
 .portfolio .pf-item {
     flex-direction: column;
 }
+.pf-item {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .pf-item:hover {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
@@ -257,6 +278,9 @@ body ul {
     margin-right: 0;
 }
 .link {
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--primary-text-color);
     text-decoration: none;
     font-style: normal;
@@ -285,6 +309,9 @@ body ul {
     color: #FFFFFF;
 }
 .button {
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--primary-text-color);
     cursor: pointer;
     font-family: inherit;
@@ -303,10 +330,6 @@ body ul {
 .button:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
-    height: 38px;
-    border: 1px;
-    border-radius: 4px;
-    padding: 6px 22px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -350,6 +373,9 @@ body ul {
     padding: 0px 32px 30px 32px;
 }
 .social-team a {
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     cursor: pointer;
     justify-content: center;
@@ -372,6 +398,9 @@ body ul {
     grid-gap: 30px;
 }
 .clients a {
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     cursor: pointer;
     width: 170px;
@@ -393,6 +422,9 @@ body ul {
     margin: 0;
 }
 .social-team-f a {
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     cursor: pointer;
     justify-content: center;
